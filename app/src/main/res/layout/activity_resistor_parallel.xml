@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ap.appoty.viktorsegers.jonaskoppen.resistorcalculator.resistor_parallel"
+    android:background="#fcf3d1">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/parallel" />
+
+    <EditText
+        android:id="@+id/editTextR1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnCalculate"
+        android:layout_marginTop="60dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editTextR2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignStart="@+id/editTextR1"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:textSize="32sp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:text="Calculate"
+        android:onClick="bereken"
+        android:background="#edd0bd"/>
+
+    <Spinner
+        android:id="@+id/planets_spinnerR1"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextR1"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/editTextR1" />
+
+    <Spinner
+        android:id="@+id/planets_spinnerR2"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextR2"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/editTextR2" />
+
+
+</RelativeLayout>

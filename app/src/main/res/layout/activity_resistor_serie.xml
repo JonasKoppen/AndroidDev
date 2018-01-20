@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ap.appoty.viktorsegers.jonaskoppen.resistorcalculator.resistor_serie"
+    android:background="#fcf3d1">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="96dp"
+        app:srcCompat="@drawable/serie" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:gravity="center"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:text="Calculate"
+        android:onClick="bereken"
+        android:background="#edd0bd"/>
+
+    <EditText
+        android:id="@+id/editTextR1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/planets_spinnerR1"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextR2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/planets_spinnerR2"
+        android:layout_toStartOf="@+id/planets_spinnerR2"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/planets_spinnerR1"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="73dp"
+        android:layout_toEndOf="@+id/editTextR1" />
+
+
+    <Spinner
+        android:id="@+id/planets_spinnerR2"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextR1"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

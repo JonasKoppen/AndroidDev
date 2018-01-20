@@ -1,8 +1,8 @@
-package koppen.jonas.ap.projectbig;
+package koppen.jonas.ap.projectbig.ResistorCalc;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -16,12 +16,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        DummyRepository dummyRepository = new DummyRepository();
-        final List<ActivityItem> activityItemList = dummyRepository.getActivitys();
+        CalculatorDummyRepository calculatorDummyRepository = new CalculatorDummyRepository();
+        final List<Calculator> calculatorList = calculatorDummyRepository.getCalculator();
 
         ListView listView = (ListView)findViewById(R.id.listView);
 
-        listView.setAdapter(new CalculatorAdapter (this, activityItemList));
+        listView.setAdapter(new CalculatorAdapter (this,calculatorList));
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startNewClass(int position){
-        ActivityItem tmp = DummyRepository.getActivitys().get(position);
-        Intent detail = new Intent(MainActivity.this, tmp.getKlasse());
+        List<Calculator> tmp = CalculatorDummyRepository.getInstance().getCalculator();
+        Intent detail = new Intent(MainActivity.this, tmp.get(position).getKlasse());
         startActivity(detail);
     }
 }
