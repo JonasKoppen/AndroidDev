@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import koppen.jonas.ap.projectbig.R;
 
 /**
  * Created by jonas on 16/12/2017.

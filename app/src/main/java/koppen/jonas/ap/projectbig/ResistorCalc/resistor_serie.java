@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import koppen.jonas.ap.projectbig.R;
 
 public class resistor_serie extends AppCompatActivity {
 

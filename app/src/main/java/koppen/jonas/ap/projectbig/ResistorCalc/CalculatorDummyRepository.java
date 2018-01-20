@@ -2,6 +2,7 @@ package koppen.jonas.ap.projectbig.ResistorCalc;
 
 import java.util.ArrayList;
 import java.util.List;
+import koppen.jonas.ap.projectbig.R;
 
 /**
  * Created by Viktor on 13-12-2017.

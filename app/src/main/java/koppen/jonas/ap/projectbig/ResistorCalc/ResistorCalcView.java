@@ -12,6 +12,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import java.util.ArrayList;
+import koppen.jonas.ap.projectbig.R;
 
 /**
  * Created by jonas on 19/12/2017.

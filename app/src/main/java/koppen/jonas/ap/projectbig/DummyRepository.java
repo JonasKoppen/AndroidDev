@@ -3,12 +3,7 @@ package koppen.jonas.ap.projectbig;
 import java.util.ArrayList;
 import java.util.List;
 
-import koppen.jonas.ap.projectbig.ResistorCalc.Calculator;
-import koppen.jonas.ap.projectbig.ResistorCalc.ICalculatorRepository;
-import koppen.jonas.ap.projectbig.ResistorCalc.OhmLaw;
-import koppen.jonas.ap.projectbig.ResistorCalc.ResistorCalc;
-import koppen.jonas.ap.projectbig.ResistorCalc.resistor_parallel;
-import koppen.jonas.ap.projectbig.ResistorCalc.resistor_serie;
+import koppen.jonas.ap.projectbig.ResistorCalc.*;
 
 /**
  * Created by Viktor on 13-12-2017.
@@ -42,10 +37,7 @@ public class DummyRepository implements ICalculatorRepository {
     public static List<ActivityItem> getActivitys() {
         List<ActivityItem> calculators = new ArrayList<>();
 
-        calculators.add(new ActivityItem("KleurCode", ResistorCalc.class));
-        calculators.add(new ActivityItem("SerieSchakeling",  resistor_serie.class));
-        calculators.add(new ActivityItem("ParallelSchakeling",  resistor_parallel.class));
-        calculators.add(new ActivityItem("OhmsLaw", OhmLaw.class));//Dummy verander dit wannneer klasse beschikbaar is!!
+        calculators.add(new ActivityItem("KleurCode", koppen.jonas.ap.projectbig.ResistorCalc.MainActivity.class));
 
         return calculators;
     }

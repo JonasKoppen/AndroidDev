@@ -9,6 +9,8 @@ import android.widget.ListView;
 
 import java.util.List;
 
+import koppen.jonas.ap.projectbig.R;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

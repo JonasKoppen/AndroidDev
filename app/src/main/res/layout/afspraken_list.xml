@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/afsprakenList_Item"
+    >
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="f"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="d"
+        android:textSize="24sp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_rowWeight="3"
+        android:gravity="center"
+        android:text="s" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_rowWeight="3"
+        android:gravity="center"
+        android:text="e" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_column="3"
+        android:layout_row="0"
+        android:layout_rowSpan="2"
+        android:layout_gravity="end"
+        android:src="@drawable/default_symbol"/>
+
+
+</GridLayout>

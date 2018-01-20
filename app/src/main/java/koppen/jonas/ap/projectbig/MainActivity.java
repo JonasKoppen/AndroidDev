@@ -9,6 +9,8 @@ import android.widget.ListView;
 
 import java.util.List;
 
+import koppen.jonas.ap.projectbig.ResistorCalc.CalculatorAdapter;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         ListView listView = (ListView)findViewById(R.id.listView);
 
-        listView.setAdapter(new CalculatorAdapter (this, activityItemList));
+        listView.setAdapter(new ActivityAdaptor(this, activityItemList));
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

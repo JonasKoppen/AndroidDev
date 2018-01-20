@@ -11,6 +11,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+import koppen.jonas.ap.projectbig.R;
 
 /**
  * Created by Viktor on 20-12-2017.

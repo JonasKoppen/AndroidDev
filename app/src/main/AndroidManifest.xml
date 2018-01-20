@@ -16,6 +16,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ResistorCalc.ResistorCalc"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".ResistorCalc.MainActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".ResistorCalc.resistor_serie"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".ResistorCalc.resistor_parallel"
+            android:screenOrientation="portrait"
+
+            ></activity>
+        <activity
+            android:name=".ResistorCalc.OhmLaw"
+            android:screenOrientation="portrait"
+            />
+
     </application>
 
 </manifest>

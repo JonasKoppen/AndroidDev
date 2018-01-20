@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import koppen.jonas.ap.projectbig.R;
+
 /**
  * Created by Viktor on 13-12-2017.
  */

@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">ProjectBig</string>
+    <string-array name="prefixOhm">
+        <item>Ω</item>
+        <item>KΩ</item>
+        <item>MΩ</item>
+        <item>GΩ</item>
+    </string-array>
+    <string-array name="prefixCurrent">
+        <item>nA</item>
+        <item>µA</item>
+        <item>mA</item>
+        <item>A</item>
+        <item>KA</item>
+        <item>MA</item>
+        <item>GA</item>
+    </string-array>
+    <string-array name="prefixVoltage">
+        <item>nV</item>
+        <item>µV</item>
+        <item>mV</item>
+        <item>V</item>
+        <item>Kv</item>
+        <item>MV</item>
+        <item>GV</item>
+    </string-array>
+    <string-array name="resistBands">
+        <item> </item>
+        <item>3 banden</item>
+        <item>4 banden</item>
+        <item>5 banden</item>
+    </string-array>
 </resources>

@@ -12,6 +12,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import koppen.jonas.ap.projectbig.R;
 
 public class ResistorCalc extends Activity {
 
