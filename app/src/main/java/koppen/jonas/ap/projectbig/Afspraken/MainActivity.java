@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.acti);
+        setContentView(R.layout.activity_main_afspraken);
         afspraken = AppointmentDummyRepository.getInstance().getAppointments();
         checkList();
         listViewAfspraken = findViewById(R.id.listViewAfspraken);

@@ -35,11 +35,12 @@ public class DummyRepository implements ICalculatorRepository {
     }
 
     public static List<ActivityItem> getActivitys() {
-        List<ActivityItem> calculators = new ArrayList<>();
+        List<ActivityItem> activityList = new ArrayList<>();
 
-        calculators.add(new ActivityItem("KleurCode", koppen.jonas.ap.projectbig.ResistorCalc.MainActivity.class));
+        activityList.add(new ActivityItem("KleurCode", koppen.jonas.ap.projectbig.ResistorCalc.MainActivity.class));
+        activityList.add(new ActivityItem("Afspraken", koppen.jonas.ap.projectbig.Afspraken.MainActivity.class));
 
-        return calculators;
+        return activityList;
     }
 }
 
