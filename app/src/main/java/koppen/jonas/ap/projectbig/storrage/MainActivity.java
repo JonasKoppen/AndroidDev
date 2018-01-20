@@ -11,25 +11,25 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import javax.annotation.Nullable;
+
+import io.realm.OrderedCollectionChangeSet;
+import io.realm.OrderedRealmCollectionChangeListener;
 import io.realm.Realm;
+import io.realm.RealmResults;
 import koppen.jonas.ap.projectbig.R;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText wishList;
-    Realm realm;
 
+    Realm realm;
     WhishList wishes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         wishes = new WhishList();
-        Realm.init(this);
-
-        realm = Realm.getDefaultInstance();
-
-        checkData(realm);
         setContentView(R.layout.activity_main_storrage);
         wishList = (EditText) findViewById(R.id.editWishList);
 
@@ -39,10 +39,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy(){
-        realm.beginTransaction();
-        //final WhishList managedWishes = realm.copyToRealm(wishes);
-
-        realm.close();
         super.onDestroy();
 
     }
@@ -78,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     public void loadList(View v){
         loadListFile();
     }
@@ -106,12 +103,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }Toast.makeText(MainActivity.this,"Load Complete",Toast.LENGTH_LONG).show();
         wishList.setText(tekst);
-    }
-
-    public void checkData(Realm realm){
-        //if(realm.where(String.class).count() > 0){
-
-        //}
     }
 
 }

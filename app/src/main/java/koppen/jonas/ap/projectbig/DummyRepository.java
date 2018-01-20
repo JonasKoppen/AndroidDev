@@ -44,6 +44,7 @@ public class DummyRepository implements ICalculatorRepository {
         activityList.add(new ActivityItem("notification", koppen.jonas.ap.projectbig.notification.MainActivity.class));
         activityList.add(new ActivityItem("lifecyle", koppen.jonas.ap.projectbig.lifeCycle.MainActivity.class));
         activityList.add(new ActivityItem("storrage", koppen.jonas.ap.projectbig.storrage.MainActivity.class));
+        activityList.add(new ActivityItem("threas", koppen.jonas.ap.projectbig.threads.MainActivity.class));
         return activityList;
     }
 }

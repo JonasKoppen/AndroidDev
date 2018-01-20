@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="koppen.jonas.ap.projectbig">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -21,44 +21,39 @@
         </activity>
         <activity
             android:name=".ResistorCalc.ResistorCalc"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ResistorCalc.MainActivity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ResistorCalc.resistor_serie"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ResistorCalc.resistor_parallel"
-            android:screenOrientation="portrait"
-
-            ></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ResistorCalc.OhmLaw"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Afspraken.MainActivity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity android:name=".Afspraken.DetailActivity">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
+
                 <data android:scheme="geo" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".ChatApp.MainActivity"></activity>
-        <activity android:name=".layoutsTest.MainActivity"></activity>
-        <activity android:name=".notification.DetailActivity"></activity>
-        <activity android:name=".notification.MainActivity"></activity>
-        <activity android:name=".lifeCycle.MainActivity"></activity>
-        <activity android:name=".storrage.MainActivity"></activity>
-
+        <activity android:name=".ChatApp.MainActivity" />
+        <activity android:name=".layoutsTest.MainActivity" />
+        <activity android:name=".notification.DetailActivity" />
+        <activity android:name=".notification.MainActivity" />
+        <activity android:name=".lifeCycle.MainActivity" />
+        <activity android:name=".storrage.MainActivity" />
+        <activity android:name=".realmStorrage.MainActivity" />
+        <activity android:name=".threads.MainActivity"></activity>
     </application>
 
 </manifest>
