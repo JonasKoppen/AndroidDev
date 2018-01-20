@@ -39,7 +39,11 @@ public class DummyRepository implements ICalculatorRepository {
 
         activityList.add(new ActivityItem("KleurCode", koppen.jonas.ap.projectbig.ResistorCalc.MainActivity.class));
         activityList.add(new ActivityItem("Afspraken", koppen.jonas.ap.projectbig.Afspraken.MainActivity.class));
-
+        activityList.add(new ActivityItem("ChatApp database firebase", koppen.jonas.ap.projectbig.ChatApp.MainActivity.class));
+        activityList.add(new ActivityItem("layouts", koppen.jonas.ap.projectbig.layoutsTest.MainActivity.class));
+        activityList.add(new ActivityItem("notification", koppen.jonas.ap.projectbig.notification.MainActivity.class));
+        activityList.add(new ActivityItem("lifecyle", koppen.jonas.ap.projectbig.lifeCycle.MainActivity.class));
+        activityList.add(new ActivityItem("storrage", koppen.jonas.ap.projectbig.storrage.MainActivity.class));
         return activityList;
     }
 }

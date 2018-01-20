@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "235329445126",
+    "firebase_url": "https://projectbig-be94a.firebaseio.com",
+    "project_id": "projectbig-be94a",
+    "storage_bucket": "projectbig-be94a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235329445126:android:952ad92d15f92c69",
+        "android_client_info": {
+          "package_name": "koppen.jonas.ap.projectbig"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235329445126-vd74hkoah1a34sk27g0ps9cldsh9nobf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "koppen.jonas.ap.projectbig",
+            "certificate_hash": "338cec117718bbad6154cafac1ef7fafc89c4e33"
+          }
+        },
+        {
+          "client_id": "235329445126-sf42jhjn6qgp9o6d74be66kkf25kdu08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA6GBn9_qWO2DWd1R7CT4C3u4He1KIoQs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235329445126-sf42jhjn6qgp9o6d74be66kkf25kdu08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

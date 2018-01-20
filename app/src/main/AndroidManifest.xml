@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="koppen.jonas.ap.projectbig">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -48,6 +51,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ChatApp.MainActivity"></activity>
+        <activity android:name=".layoutsTest.MainActivity"></activity>
+        <activity android:name=".notification.DetailActivity"></activity>
+        <activity android:name=".notification.MainActivity"></activity>
+        <activity android:name=".lifeCycle.MainActivity"></activity>
+        <activity android:name=".storrage.MainActivity"></activity>
 
     </application>
 

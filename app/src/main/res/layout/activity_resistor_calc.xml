@@ -36,7 +36,7 @@
 
     </LinearLayout>
 
-    <ap.appoty.viktorsegers.jonaskoppen.resistorcalculator.ResistorCalcView
+    <koppen.jonas.ap.projectbig.ResistorCalc.ResistorCalcView
         android:id="@+id/resistorCalcView"
         android:layout_width="match_parent"
         android:layout_height="100dp"
