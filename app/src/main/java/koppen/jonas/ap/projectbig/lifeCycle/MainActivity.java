@@ -1,11 +1,17 @@
 package koppen.jonas.ap.projectbig.lifeCycle;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -29,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
             int inGetal = savedInstanceState.getInt("getal", -1);
             if (inGetal != -1) {
                 getal = inGetal;
+                ((TextView)findViewById(R.id.lifeCycleTxt)).setText(getal);
             }
         }
         else {
@@ -143,6 +150,31 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
 
+        }
+    }
+
+    public void gaNaarTweakers(View v){
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("http://www.tweakers.net"));
+        startActivity(intent);
+    }
+
+    static final int REQUEST_IMAGE_CAPTURE = 1;
+
+    public void takePicture(View v ){
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if(takePictureIntent.resolveActivity(getPackageManager()) != null){
+            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+            ImageView imageView = (ImageView)findViewById(R.id.picture);
+            imageView.setImageBitmap(imageBitmap);
         }
     }
 }

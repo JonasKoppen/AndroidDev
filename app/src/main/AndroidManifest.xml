@@ -53,7 +53,8 @@
         <activity android:name=".lifeCycle.MainActivity" />
         <activity android:name=".storrage.MainActivity" />
         <activity android:name=".realmStorrage.MainActivity" />
-        <activity android:name=".threads.MainActivity"></activity>
+        <activity android:name=".threads.MainActivity" />
+        <activity android:name=".Fibonnaci.MainActivity"></activity>
     </application>
 
 </manifest>
