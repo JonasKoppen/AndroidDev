@@ -19,6 +19,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_fibonacci);
+        int size = 1000;
+        final FiboItem[] listf = new FiboItem[size];
+        for(int i= 0; i < size; i++){
+            listf[i] = new FiboItem(i);
+        }
+        ListView fiboListView = (ListView) findViewById(R.id.fibonacci_list_view);
+        fiboListView.setAdapter(new FibonacciAdapterhi(this,listf));
+        fiboListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Context context = getApplicationContext();
+                CharSequence text = listf[i].toString();
+                int duration = Toast.LENGTH_SHORT;
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+        });
+        /*
         int size = 25;
         final Double[] arr = new Double[size];
         for(int i = 0; i< size; i++){
@@ -37,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
                 toast.show();
             }
         });
+        */
+
     }
 
 
