@@ -6,6 +6,7 @@ import android.os.Bundle;
 import io.realm.OrderedCollectionChangeSet;
 import io.realm.OrderedRealmCollectionChangeListener;
 import io.realm.Realm;
+import io.realm.RealmConfiguration;
 import io.realm.RealmList;
 import io.realm.RealmObject;
 import io.realm.RealmResults;
@@ -26,9 +27,13 @@ public class MainActivity extends AppCompatActivity {
 
 // Initialize Realm (just once per application)
         Realm.init(this);
+        RealmConfiguration config = new RealmConfiguration
+                .Builder()
+                .deleteRealmIfMigrationNeeded()
+                .build();
 
 // Get a Realm instance for this thread
-        Realm realm = Realm.getDefaultInstance();
+        Realm realm = Realm.getInstance(config);
 
 // Query Realm for all dogs younger than 2 years old
         final RealmResults<Dog> puppies = realm.where(Dog.class).lessThan("age", 2).findAll();
