@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_fibonacci);
-        int size = 1000;
+        int size = 10000;
         final FiboItem[] listf = new FiboItem[size];
         for(int i= 0; i < size; i++){
             listf[i] = new FiboItem(i);

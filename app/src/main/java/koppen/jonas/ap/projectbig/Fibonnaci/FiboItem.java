@@ -1,5 +1,7 @@
 package koppen.jonas.ap.projectbig.Fibonnaci;
 
+import java.math.BigDecimal;
+
 /**
  * Created by jonas on 21/01/2018.
  */

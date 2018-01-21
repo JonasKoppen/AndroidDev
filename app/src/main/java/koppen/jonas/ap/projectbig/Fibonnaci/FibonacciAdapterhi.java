@@ -44,7 +44,7 @@ public class FibonacciAdapterhi extends ArrayAdapter<FiboItem> {
 
         TextView textView = (TextView)
                 view.findViewById(R.id.fibonacci_list_entry);
-        textView.setText( Double.toString(getItem(position).getValue()));
+        textView.setText( Integer.toString(getItem(position).getId())+ "/" +Double.toString(getItem(position).getValue()));
 
         ImageView imageView = (ImageView)
                 view.findViewById(R.id.fibonacci_list_entry_image);
